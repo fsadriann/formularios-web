@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <div class="form">
+        <form action="">
+            <h3>Formularios</h3>
+            <input type="text" id="texto">
+            <textarea name="" id="parrafo" cols="30" rows="2" placeholder="Ingrese un valor"></textarea>
+            <button onclick="mostrar_valores()">Mostrar valores</button>
+        </form>
+    </div>
+
+    <script>
+        function mostrar_valores()
+        {
+            var valor1 = document.getElementById('texto').value;
+            var valor2 = document.getElementById('parrafo').value;
+            alert(valor1);
+            alert(valor2);
+            console.log(valor1);
+            console.log(valor2);
+        }
+    </script>
+</body>
+</html>
