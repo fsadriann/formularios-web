@@ -7,6 +7,10 @@
 
 body{
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
 .form{
@@ -35,4 +39,7 @@ button{
 
 input{
     padding: 5px;
+    border-radius: 12px;
+    border: 5px solid gray;
+    font: bold;
 }
