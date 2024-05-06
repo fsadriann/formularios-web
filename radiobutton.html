@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="radio" value="si" name="pregunta" id="pregunta_si">Sí
+        <input type="radio" value="no" name="pregunta" id="pregunta_no">No
+        <input type="radio" value="nsnc" 
+        name="pregunta" id="pregunta_nsnc">Ns / Nc
+        <button onclick="valores()">Consultar valores</button>
+    </form>
+    <script>
+        function valores()
+        {
+            var elementos = document.getElementsByName("pregunta");
+            for(var i=0; i<elementos.length; i++) 
+            {
+                console.log(" Elemento: " + elementos[i].value + "\n Seleccionado: "+ elementos[i].checked);
+                alert(" Elemento: " + elementos[i].value + "\n Seleccionado: "+ elementos[i].checked);
+            }
+        }
+    </script>
+</body>
+</html>
